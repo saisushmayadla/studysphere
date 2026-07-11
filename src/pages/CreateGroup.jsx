@@ -62,7 +62,16 @@ function CreateGroup() {
           type="text"
           name="title"
           placeholder="Group Name"
+          value={form.title}
           onChange={handleChange}
+          style={{
+            width: "100%",
+            padding: "15px",
+            borderRadius: "12px",
+            border: "1px solid #ddd",
+            marginBottom: "20px",
+            fontSize: "16px"
+          }}
         />
 
         <br /><br />
@@ -164,8 +173,21 @@ function CreateGroup() {
 
         <br /><br />
 
-        <button type="submit">
-          Create Group
+        <button
+          type="submit"
+          style={{
+            width: "100%",
+            padding: "15px",
+            background: "#4F46E5",
+            color: "white",
+            border: "none",
+            borderRadius: "12px",
+            fontSize: "18px",
+            fontWeight: "600",
+            cursor: "pointer"
+          }}
+        >
+           Create Study Group
         </button>
 
       </form>
