@@ -1,0 +1,63 @@
+.navbar {
+    width: 92%;
+    margin: 20px auto;
+    padding: 18px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    backdrop-filter: blur(18px);
+
+    background: rgba(255,255,255,.45);
+
+    border-radius: 20px;
+
+    box-shadow: 0 15px 40px rgba(0,0,0,.08);
+
+    position: sticky;
+
+    top: 15px;
+
+    z-index: 100;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:800;
+    color:#4F46E5;
+}
+
+.nav-links{
+    display:flex;
+    gap:30px;
+    align-items:center;
+}
+
+.nav-links a{
+    font-weight:600;
+}
+
+.nav-links button{
+
+padding:12px 22px;
+
+background:#4F46E5;
+
+color:white;
+
+border:none;
+
+border-radius:12px;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.nav-links button:hover{
+
+transform:translateY(-3px);
+
+}
