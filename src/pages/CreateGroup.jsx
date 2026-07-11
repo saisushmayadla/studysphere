@@ -67,47 +67,99 @@ function CreateGroup() {
 
         <br /><br />
 
-        <input
-          type="text"
+        <select
           name="subject"
-          placeholder="Subject"
+          value={form.subject}
           onChange={handleChange}
-        />
+          style={{
+            width: "100%",
+            padding: "12px",
+            borderRadius: "10px",
+            marginBottom: "20px"
+          }}
+        >
+          <option value="">Select Subject</option>
+          <option value="Data Structures">Data Structures</option>
+          <option value="Operating Systems">Operating Systems</option>
+          <option value="DBMS">DBMS</option>
+          <option value="Computer Networks">Computer Networks</option>
+          <option value="Web Development">Web Development</option>
+          <option value="Java">Java</option>
+          <option value="Python">Python</option>
+        </select>
 
         <br /><br />
 
-        <input
-          type="text"
+        <select
           name="department"
-          placeholder="Department"
+          value={form.department}
           onChange={handleChange}
-        />
+          style={{
+            width: "100%",
+            padding: "12px",
+            borderRadius: "10px",
+            marginBottom: "20px"
+          }}
+        >
+          <option value="">Select Department</option>
+          <option value="CSE">CSE</option>
+          <option value="ECE">ECE</option>
+          <option value="EEE">EEE</option>
+          <option value="Mechanical">Mechanical</option>
+          <option value="Civil">Civil</option>
+        </select>
 
         <br /><br />
 
-        <input
-          type="number"
+        <select
           name="year"
-          placeholder="Year"
+          value={form.year}
           onChange={handleChange}
-        />
+          style={{
+            width: "100%",
+            padding: "12px",
+            borderRadius: "10px",
+            marginBottom: "20px"
+          }}
+        >
+          <option value="">Select Year</option>
+          <option value="1st Year">1st Year</option>
+          <option value="2nd Year">2nd Year</option>
+          <option value="3rd Year">3rd Year</option>
+          <option value="4th Year">4th Year</option>
+        </select>
 
         <br /><br />
 
         <input
           type="number"
           name="members"
-          placeholder="Members"
+          value={form.members}
+          min="2"
+          max="10"
+          placeholder="Maximum Members"
           onChange={handleChange}
+          style={{
+            width: "100%",
+            padding: "12px",
+            borderRadius: "10px",
+            marginBottom: "20px"
+          }}
         />
 
         <br /><br />
 
         <input
-          type="text"
+          type="time"
           name="schedule"
-          placeholder="Schedule"
+          value={form.schedule}
           onChange={handleChange}
+          style={{
+            width: "100%",
+            padding: "12px",
+            borderRadius: "10px",
+            marginBottom: "20px"
+          }}
         />
 
         <br /><br />
